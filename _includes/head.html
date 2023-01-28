@@ -2,6 +2,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
+  {% unless site.plugins contains "jekyll-seo-tag" %}
+    <title>{{ page.title }} - {{ site.title }}</title>
+
+    {% if page.description %}
+      <meta name="Description" content="{{ page.description }}">
+    {% endif %}
+  {% endunless %}
+
   <link rel="stylesheet" href="{{ '/assets/css/just-the-docs-default.css' | relative_url }}">
 
   {% if site.ga_tracking != nil %}
@@ -27,6 +35,24 @@
   {% endif %}
 
   <script src="{{ '/assets/js/just-the-docs.js' | relative_url }}"></script>
+
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+        displayMath: [['$$','$$'], ['\\(','\\)'], ['\\[','\\]']],
+        inlineMath: [['$','$']]
+      },
+      TeX: {
+        equationNumbers: {
+          autoNumber: 'AMS'
+        }
+      },
+      displayAlign: "left",
+      displayIndent: "3em"
+    });
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
