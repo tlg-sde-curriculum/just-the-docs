@@ -3,11 +3,9 @@ div {
     code {
       font-size: 0.9em;
 
-      &.language-mermaid {
-        span {
-          &.nodeLabel {
-            text-transform: unset;
-          }
+      g.nodes {
+        span.nodeLabel {
+          text-transform: unset;
         }
       }
     }
