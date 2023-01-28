@@ -58,8 +58,8 @@
 
   <!-- {{ site.favicon_ico }} -->
   {% for file in site.static_files %}
+    <!-- {{ file.path }} -->
     {% if file.path == site.favicon_ico or file.path == '/favicon.ico' %}
-      <!-- {{ file.path }} -->
       {% assign favicon = true %}
     {% endif %}
   {% endfor %}
