@@ -172,5 +172,3 @@ compress_html:
   profile: false
   # ignore:
   #   envs: all
-
-favicon_ico: "/assets/images/favicon.ico"

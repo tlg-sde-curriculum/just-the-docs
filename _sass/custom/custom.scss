@@ -1,13 +1,10 @@
 div {
-
   &#main-content {
-
     code {
       font-size: 0.9em;
     }
 
     & > ol > li {
-
       &::before {
         content: counter(step-counter) ".";
       }
@@ -32,7 +29,6 @@ div {
       font-size: 0.9em;
 
       & > ol > li {
-
         &::before {
           content: counter(step-counter) ".";
         }
@@ -44,7 +40,7 @@ div {
             padding-left: 0.25rem;
 
             &::before {
-              content: counter(sub-counter,lower-alpha) ".";
+              content: counter(sub-counter, lower-alpha) ".";
             }
           }
         }

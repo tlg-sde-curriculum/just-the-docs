@@ -56,9 +56,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- {{ site.favicon_ico }} -->
   {% for file in site.static_files %}
-    <!-- {{ file.path }} -->
     {% if file.path == site.favicon_ico or file.path == '/favicon.ico' %}
       {% assign favicon = true %}
     {% endif %}
