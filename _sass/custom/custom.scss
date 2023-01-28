@@ -1,19 +1,19 @@
 div {
 
   &#main-content {
-  
+
     code {
       font-size: 0.9em;
     }
-  
+
     & > ol > li {
-    
+
       &::before {
         content: counter(step-counter) ".";
       }
-      
+
       ol {
-      
+
         list-style-type: none;
 
         & > li {
@@ -27,7 +27,7 @@ div {
         }
 
       }
-      
+
     }
 
     div.footnotes {
@@ -38,13 +38,13 @@ div {
       font-size: 0.9em;
 
       & > ol > li {
-      
+
         &::before {
           content: counter(step-counter) ".";
         }
-        
+
         ol {
-        
+
           list-style-type: none;
 
           & > li {
@@ -58,13 +58,13 @@ div {
           }
 
         }
-        
+
       }
 
     }
 
     p.figure-block {
-      
+
       text-align: center;
       font-style: italic;
       font-size: smaller;
@@ -73,11 +73,11 @@ div {
         display: block;
         margin-left: auto;
         margin-right: auto;
-      }      
-      
+      }
+
     }
-    
-    
+
+
     .five-sixths-width {
       width: 83.33%;
     }
