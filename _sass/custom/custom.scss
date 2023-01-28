@@ -1,1 +1,136 @@
-// custom SCSS (or CSS) goes here
+div {
+
+  &#main-content {
+  
+    code {
+      font-size: 0.9em;
+    }
+  
+    & > ol > li {
+    
+      &::before {
+        content: counter(step-counter) ".";
+      }
+      
+      ol {
+      
+        list-style-type: none;
+
+        & > li {
+
+          padding-left: 0.25rem;
+
+          &::before {
+            content: counter(sub-counter,lower-alpha) ".";
+          }
+
+        }
+
+      }
+      
+    }
+
+    div.footnotes {
+
+      margin-top: 2.5em;
+      padding-top: 1em;
+      border-top: 1px solid rgba(92, 89, 98, 0.25);
+      font-size: 0.9em;
+
+      & > ol > li {
+      
+        &::before {
+          content: counter(step-counter) ".";
+        }
+        
+        ol {
+        
+          list-style-type: none;
+
+          & > li {
+
+            padding-left: 0.25rem;
+
+            &::before {
+              content: counter(sub-counter,lower-alpha) ".";
+            }
+
+          }
+
+        }
+        
+      }
+
+    }
+
+    p.figure-block {
+      
+      text-align: center;
+      font-style: italic;
+      font-size: smaller;
+
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }      
+      
+    }
+    
+    
+    .five-sixths-width {
+      width: 83.33%;
+    }
+
+    .three-quarters-width {
+      width: 75%;
+    }
+
+    .two-thirds-width {
+      width: 66.75%;
+    }
+
+    .half-width {
+      width: 50%;
+    }
+
+    .third-width {
+      width: 33.33%;
+    }
+
+    .quarter-width {
+      width: 25%;
+    }
+
+    .sixth-width {
+      width: 16.67%;
+    }
+
+  }
+
+  &.site-header {
+
+    display: block;
+    height: fit-content;
+    max-height: fit-content;
+    margin-top: 0.5rem;
+
+    img {
+      display: block;
+      position: relative;
+      width: 50%;
+      max-width: 120px;
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    a.site-title {
+      display: block;
+      height: fit-content;
+      text-align: center;
+    }
+
+  }
+
+}
