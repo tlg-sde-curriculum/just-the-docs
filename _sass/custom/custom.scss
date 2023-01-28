@@ -5,7 +5,8 @@ div {
 
       g.nodes {
         span.nodeLabel {
-          text-transform: unset;
+          text-transform: initial;
+          font-family: $mono-font-family;
         }
       }
     }
