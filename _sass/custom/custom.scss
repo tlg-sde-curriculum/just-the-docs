@@ -2,10 +2,10 @@ div {
   &#main-content {
     code {
       font-size: 0.9em;
-      
+
       &.language-mermaid {
-        g {
-          &.node#{&}.label {
+        span {
+          &.nodeLabel {
             text-transform: unset;
           }
         }
