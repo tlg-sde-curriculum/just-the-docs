@@ -1,6 +1,13 @@
 // stylelint-disable selector-class-pattern
 div {
   &#main-content {
+    & > details {
+      & > summary {
+        text-transform: uppercase;
+        font-size: 12px !important;
+      }
+    }
+    
     code {
       font-size: 0.9em;
 
