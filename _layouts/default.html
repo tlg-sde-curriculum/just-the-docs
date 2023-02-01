@@ -16,7 +16,8 @@ layout: table_wrappers
       {% include components/breadcrumbs.html %}
       <div id="main-content" class="main-content" role="main">
         {% if page.title %}
-          {% assign title_slug = page.title | slugify %}
+          {% capture title_text %}{{ page.title }}{% endcapture %}
+          {% assign title_slug = title_text | slugify %}
           <h1 class="no_toc" id="{{ title_slug }}"><a href="#{{ title_slug }}" class="anchor-heading" aria-labelledby="{{ title_slug }}"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a>{{ page.title }}</h1>
         {% endif %}
         {% if page.has_toc != false %}
