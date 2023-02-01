@@ -37,6 +37,18 @@ div {
       }
     }
 
+    h2.text-delta + ul {
+      ul,
+      ol {
+        margin-top: 0;
+        margin-bottom 0: 
+      }
+
+      li {
+        margin: 0.1em 0;
+      }
+    }
+
     div.footnotes {
       margin-top: 2.5em;
       padding-top: 1em;
