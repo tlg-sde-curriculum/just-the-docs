@@ -17,13 +17,13 @@ layout: table_wrappers
       <div id="main-content" class="main-content" role="main">
         {% capture header_slug %}{{ page.title | slugify }}{% endcapture %}
         <h1 class="no_toc" id="{{ header_slug }}"><a href="#{{ header_slug }}" class="anchor-heading" aria-labelledby="{{ header_slug }}"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a>{{ page.title }}</h1>
+        <!-- page.has_toc = {{ page.has_toc }} -->
+        {% if page.has_toc != false %}
+          <h2 class="no_toc text-delta"><a href="#page-contents" class="anchor-heading" aria-labelledby="page-contents"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a>Page contents</h2>
+        {% endif %}
         {% if site.heading_anchors != false %}
           {% include vendor/anchor_headings.html html=content beforeHeading="true" anchorBody="<svg viewBox=\"0 0 16 16\" aria-hidden=\"true\"><use xlink:href=\"#svg-link\"></use></svg>" anchorClass="anchor-heading" anchorAttrs="aria-labelledby=\"%html_id%\"" %}
         {% else %}
-          <!-- page.has_toc = {{ page.has_toc }} -->
-          {% if page.has_toc != false %}
-            <h2 class="no_toc text-delta"><a href="#page-contents" class="anchor-heading" aria-labelledby="page-contents"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a>Page contents</h2>
-          {% endif %}
           {{ content }}
         {% endif %}
 
