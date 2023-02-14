@@ -5,6 +5,7 @@
 *[BMP]: Basic Multilingual Plane
 *[BOM]: Byte Order Mark
 *[CORBA]: Common Object Request Broker Architecture
+*[CPU]: Central Processing Unit
 *[CRUD]: Create-Read-Update-Delete
 *[CSPRNG]: Cryptographically Secure Pseudo-Random Number Generator
 *[CSS]: Cascading Style Sheets
@@ -24,6 +25,7 @@
 *[EAR]: Enterprise ARchive
 *[ERD]: Entity-Relationship Diagram
 *[ERDs]: Entity-Relationship Diagrams
+*[FPU]: Floating-Point Unit
 *[FSM]: Finite-State Machine
 *[GC]: Garbage Collection (or Garbage Collector)
 *[GIF]: Graphics Interchange Format
