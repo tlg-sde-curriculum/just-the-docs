@@ -40,6 +40,10 @@ div {
       }
     }
 
+    & > h4 {
+      font-style: italic;
+    }
+
     h2.text-delta + ul {
       ul,
       ol {
@@ -50,10 +54,6 @@ div {
       li {
         margin: 0.1em 0;
       }
-    }
-
-    h4 {
-      font-style: italic !important;
     }
 
     div.footnotes {
