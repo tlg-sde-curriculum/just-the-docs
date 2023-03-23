@@ -8,8 +8,7 @@ div {
       }
     }
 
-    code, 
-    a.code {
+    code {
       font-family: $mono-font-family;
       font-size: 0.9em;
       border: 0;
@@ -17,15 +16,31 @@ div {
       padding: 0;
       background-color: #f0f0f0;
 
-      &:visited {
-        border: 0;
-      }
-
       g.nodes {
         span.nodeLabel {
           text-transform: initial;
           font-family: $mono-font-family;
         }
+      }
+    }
+
+    a.code {
+      font-family: $mono-font-family;
+      font-size: 0.9em;
+      border: 0;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+      text-decoration: underline;
+      text-decoration-color: $border-color;
+      text-underline-offset: 2px;
+
+      &:visited {
+        border: 0;
+      }
+
+      &:hover {
+        text-decoration-color: rgba($link-color, 0.45);
       }
     }
 
