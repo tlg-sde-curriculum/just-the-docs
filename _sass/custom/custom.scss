@@ -45,7 +45,7 @@ div {
         }
       }
     }
-    
+
     & > ol > li {
       &::before {
         content: counter(step-counter) ".";
