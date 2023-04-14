@@ -8,6 +8,19 @@ div {
       }
     }
 
+    dl {
+      display: block;
+
+      dt {
+        grid-column: unset;
+        text-align: left;
+      }
+
+      dl {
+        grid-column: unset;
+      }
+    }
+
     code {
       font-family: $mono-font-family;
       font-size: 0.9em;
