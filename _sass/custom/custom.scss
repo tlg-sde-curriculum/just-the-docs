@@ -8,22 +8,20 @@ div {
       }
     }
 
-    dl {
-      *.interleaved {
-        display: block;
+    dl.interleaved {
+      display: block;
 
-        dt {
-          grid-column: unset;
-          text-align: left;
+      dt {
+        grid-column: unset;
+        text-align: left;
 
-          &::after {
-            content: none;
-          }
+        &::after {
+          content: none;
         }
+      }
 
-        dl {
-          grid-column: unset;
-        }
+      dl {
+        grid-column: unset;
       }
     }
 
