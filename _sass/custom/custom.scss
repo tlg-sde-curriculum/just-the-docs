@@ -63,7 +63,7 @@ div {
       }
     }
 
-    & > ol > li {
+    ol > li {
       &::before {
         content: counter(step-counter) ".";
       }
