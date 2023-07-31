@@ -86,6 +86,7 @@
 *[SSG]: SQL Style Guide
 *[SSL]: Secure Sockets Layer
 *[SVG]: Scalable Vector Graphics
+*[TDD]: Test-Driven Development
 *[TOC]: Table of Contents
 *[TAoCP]: The Art of Computer Programming, by Donald Knuth---the definitive reference work on algorithms.
 *[TeX]: Typesetting system invented by Donald Knuth, used for formatting complex or technical content, such as mathematical formulas.
