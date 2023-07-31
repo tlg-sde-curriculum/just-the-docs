@@ -69,6 +69,7 @@
 *[PII]: Personally Identifiable Information
 *[PNG]: Portable Network Graphics
 *[POJO]: Plain Old Java Object
+*[PoLA]: Principle of Least Astonishment (aka Principle of Least Surprise)
 *[PRNG]: Pseudo-Random Number Generator
 *[RDBMS]: Relational DataBase Management System
 *[RDBMSs]: Relational DataBase Management Systems
