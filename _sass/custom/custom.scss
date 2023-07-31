@@ -203,7 +203,13 @@ div {
     }
   }
 
-  figcaption {
-    font-size: 80%;
+  figure {
+    p {
+      margin-bottom: 0;
+    }
+
+    figcaption {
+      font-size: 80%;
+    }
   }
 }
